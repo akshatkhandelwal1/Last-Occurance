@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+int n,m;
+scanf("%d%d",&n,&m);
+int a[n],index = -1;
+for(int i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+if(m==a[i]){
+index=i;
+continue;}
+}
+if(index==-1)
+printf("%d",index);
+else{
+printf("%d",index+1);
+}
+}
